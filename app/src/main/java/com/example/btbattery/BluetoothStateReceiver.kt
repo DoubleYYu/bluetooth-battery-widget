@@ -12,12 +12,14 @@ import android.content.IntentFilter
 class BluetoothStateReceiver : BroadcastReceiver() {
 
     companion object {
+        private const val ACTION_BATTERY_LEVEL_CHANGED =
+            "android.bluetooth.device.action.BATTERY_LEVEL_CHANGED"
+
         fun register(context: Context) {
             val filter = IntentFilter().apply {
                 addAction(BluetoothDevice.ACTION_ACL_CONNECTED)
                 addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED)
-                addAction(BluetoothDevice.ACTION_BATTERY_LEVEL_CHANGED)
-                addAction("android.bluetooth.device.action.BATTERY_LEVEL_CHANGED")
+                addAction(ACTION_BATTERY_LEVEL_CHANGED)
             }
             context.registerReceiver(BluetoothStateReceiver(), filter)
         }
@@ -27,9 +29,7 @@ class BluetoothStateReceiver : BroadcastReceiver() {
         when (intent.action) {
             BluetoothDevice.ACTION_ACL_CONNECTED,
             BluetoothDevice.ACTION_ACL_DISCONNECTED,
-            BluetoothDevice.ACTION_BATTERY_LEVEL_CHANGED,
-            "android.bluetooth.device.action.BATTERY_LEVEL_CHANGED" -> {
-                // Auto-refresh widget when Bluetooth state changes
+            ACTION_BATTERY_LEVEL_CHANGED -> {
                 BatteryWidgetProvider.updateWidget(context)
             }
         }
