@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single device row - iOS style: icon | name | battery bar | percentage -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="6dp">
+
+    <!-- Device type icon (rounded circle bg) -->
+    <FrameLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_device_icon">
+
+        <ImageView
+            android:id="@+id/ivDeviceIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_bluetooth_default"
+            android:contentDescription="设备类型" />
+    </FrameLayout>
+
+    <!-- Device name -->
+    <TextView
+        android:id="@+id/tvDeviceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="设备名称"
+        android:textColor="#1C1C1E"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Battery bar + percentage -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Progress bar (thin, rounded, iOS style) -->
+        <ProgressBar
+            android:id="@+id/pbBattery"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="48dp"
+            android:layout_height="6dp"
+            android:max="100"
+            android:progress="85"
+            android:progressDrawable="@drawable/bg_battery_progress" />
+
+        <!-- Battery percentage text -->
+        <TextView
+            android:id="@+id/tvBatteryLevel"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="end"
+            android:text="85%"
+            android:textColor="#3A3A3C"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:minWidth="36dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Battery body -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E8E8ED" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <!-- Battery fill (will be clipped by progress) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#34C759" />
+                <corners android:radius="3dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

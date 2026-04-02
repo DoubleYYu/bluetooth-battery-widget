@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Widget preview for the widget picker -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="250dp"
+    android:height="120dp"
+    android:viewportWidth="250"
+    android:viewportHeight="120">
+    <!-- Card background -->
+    <path
+        android:fillColor="#F2FFFFFF"
+        android:pathData="M12,0h226a12,12 0,0 1,12 12v96a12,12 0,0 1,-12 12H12A12,12 0,0 1,0 108V12A12,12 0,0 1,12 0z" />
+    <!-- Title -->
+    <path
+        android:fillColor="#1C1C1E"
+        android:pathData="M24,24h12v2H24zM40,24h80v2H40z" />
+    <!-- Device 1 row -->
+    <path
+        android:fillColor="#F2F2F7"
+        android:pathData="M24,44 a14,14 0,1 1,28 0 a14,14 0,1 1,-28 0" />
+    <path
+        android:fillColor="#1C1C1E"
+        android:pathData="M58,43h60v2H58z" />
+    <path
+        android:fillColor="#E8E8ED"
+        android:pathData="M160,42h48v4h-48z" />
+    <path
+        android:fillColor="#34C759"
+        android:pathData="M160,42h38v4h-38z" />
+    <path
+        android:fillColor="#3A3A3C"
+        android:pathData="M214,42h16v4h-16z" />
+    <!-- Device 2 row -->
+    <path
+        android:fillColor="#F2F2F7"
+        android:pathData="M24,72 a14,14 0,1 1,28 0 a14,14 0,1 1,-28 0" />
+    <path
+        android:fillColor="#1C1C1E"
+        android:pathData="M58,71h60v2H58z" />
+    <path
+        android:fillColor="#E8E8ED"
+        android:pathData="M160,70h48v4h-48z" />
+    <path
+        android:fillColor="#FF9500"
+        android:pathData="M160,70h24v4h-24z" />
+    <path
+        android:fillColor="#3A3A3C"
+        android:pathData="M214,70h16v4h-16z" />
+</vector>

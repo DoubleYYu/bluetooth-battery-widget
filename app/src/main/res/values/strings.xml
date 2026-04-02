@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">蓝牙电量</string>
+    <string name="widget_name">蓝牙设备电量</string>
+    <string name="widget_description">查看已连接蓝牙设备的电量状态</string>
+    <string name="no_devices">未发现蓝牙设备</string>
+    <string name="no_devices_hint">请确保设备已开启并连接</string>
+    <string name="refresh">刷新</string>
+    <string name="updated_at">更新于 %s</string>
+    <string name="battery_level">%d%%</string>
+    <string name="permission_required">需要蓝牙权限才能查看设备电量</string>
+    <string name="grant_permission">授予权限</string>
+</resources>

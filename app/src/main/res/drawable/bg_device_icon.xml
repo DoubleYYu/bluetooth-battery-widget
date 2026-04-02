@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Light gray circle for device icon background -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#F2F2F7" />
+    <size
+        android:width="36dp"
+        android:height="36dp" />
+</shape>
